@@ -1,4 +1,4 @@
-package com.shoppi.happybrithday
+package com.shoppi.happybirthday
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

@@ -1,4 +1,4 @@
-package com.shoppi.happybrithday
+package com.shoppi.happybirthday
 
 import org.junit.Test
 

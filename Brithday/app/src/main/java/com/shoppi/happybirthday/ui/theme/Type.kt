@@ -1,4 +1,4 @@
-package com.shoppi.happybrithday.ui.theme
+package com.shoppi.happybirthday.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

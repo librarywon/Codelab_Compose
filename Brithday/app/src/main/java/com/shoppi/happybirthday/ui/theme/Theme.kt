@@ -1,4 +1,4 @@
-package com.shoppi.happybrithday.ui.theme
+package com.shoppi.happybirthday.ui.theme
 
 import android.app.Activity
 import android.os.Build
