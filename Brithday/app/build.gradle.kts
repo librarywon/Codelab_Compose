@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.shoppi.happybrithday"
+    namespace = "com.shoppi.happybirthday"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.shoppi.happybrithday"
+        applicationId = "com.shoppi.happybirthday"
         minSdk = 27
         targetSdk = 34
         versionCode = 1
