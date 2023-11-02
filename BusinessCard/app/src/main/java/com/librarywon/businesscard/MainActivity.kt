@@ -90,7 +90,7 @@ fun InfoSection(modifier: Modifier = Modifier) {
         )
         CardInfo(
             painter = painterResource(id = R.drawable.ic_share),
-            text = "@librarywon
+            text = "@librarywon"
         )
         CardInfo(
             painter = painterResource(id = R.drawable.ic_mail),
