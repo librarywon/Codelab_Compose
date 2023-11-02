@@ -15,7 +15,9 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
@@ -38,9 +40,10 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
+    // Create a column so that texts don't overlap
     Column(
         verticalArrangement = Arrangement.Center,
-        modifier = modifier.padding(8.dp)
+        modifier = modifier
     ) {
         Text(
             text = message,
@@ -58,11 +61,12 @@ fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
     }
 }
 
-@Preview(showBackground = true)
+@Preview(showBackground = false)
 @Composable
 fun BirthdayCardPreview() {
     HappyBirthdayTheme {
-        GreetingImage("Happy Birthday Seo!", "From Harry")
+        GreetingImage(stringResource(R.string.happy_birthday_text),
+            stringResource(R.string.from_harry_text))
     }
 }
 
@@ -74,7 +78,9 @@ fun GreetingImage(message: String, from: String, modifier: Modifier = Modifier) 
     Box {
         Image(
             painter = image,
-            contentDescription = null
+            contentDescription = null,
+            contentScale = ContentScale.Crop,
+            alpha = 0.5F
         )
         GreetingText(
             message = message,
